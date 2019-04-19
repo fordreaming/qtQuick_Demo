@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ItemTest.qml</file>
+        <file>blue_text_wrap.qml</file>
+        <file>button_style.qml</file>
+        <file>imageTest.qml</file>
+        <file>show_net_image.qml</file>
+        <file>connections_test.qml</file>
+        <file>my_signal.qml</file>
+        <file>signal_3_slot.qml</file>
+        <file>handle_mouse.qml</file>
+        <file>Color_picker.qml</file>
+        <file>ComponentFile.qml</file>
+        <file>LoaderTest.qml</file>
+        <file>LoaderFocus.qml</file>
+        <file>LoaderComponentFile.qml</file>
+        <file>DynamicComponent.qml</file>
+        <file>QtCreateComponent.qml</file>
+    </qresource>
+</RCC>
