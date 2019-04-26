@@ -17,5 +17,10 @@
         <file>LoaderComponentFile.qml</file>
         <file>DynamicComponent.qml</file>
         <file>QtCreateComponent.qml</file>
+        <file>QtCreateComponent2.qml</file>
+        <file>draw_local_image.qml</file>
+        <file>rectangle_draw.qml</file>
+        <file>ImgZoomIn.qml</file>
+        <file>AnchorsFillTest.qml</file>
     </qresource>
 </RCC>
