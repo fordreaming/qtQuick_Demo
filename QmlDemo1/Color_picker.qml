@@ -27,7 +27,8 @@ Rectangle {
     }
 
     Keys.onSpacePressed: {
-        configureBorder();
+        colorPicker.colorPicked(colorPicker.color);
+        event.accepted = true;
     }
 
     onFocusChanged: {

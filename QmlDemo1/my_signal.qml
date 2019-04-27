@@ -50,12 +50,13 @@ Rectangle {
         }
     }
     Connections {
-        target: redLoader
+        target: redLoader.item
         onColorPicked: {
             coloredText.color = clr;
         }
     }
     Connections {
+        target: blueLoader.item
         onColorPicked: {
             coloredText.color = clr;
         }

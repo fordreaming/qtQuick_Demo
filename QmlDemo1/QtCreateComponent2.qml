@@ -4,7 +4,7 @@ import QtQuick.Controls 1.2
 Rectangle {
     id: rootItem
     width: 360
-    height: 300
+    height: 360
 
     property int count: 0
     property Component component: null
@@ -12,8 +12,6 @@ Rectangle {
     Text {
         id: coloredText
         text: "Hello World"
-        anchors.verticalCenterOffset: 66
-        anchors.horizontalCenterOffset: -6
         anchors.centerIn: parent
         font.pixelSize: 24
     }
@@ -24,10 +22,12 @@ Rectangle {
 
     function createColorPicker(clr) {
         if(rootItem.component == null) {
-            rootItem.component = Qt.createComponent("Color_picker.qml")
+            rootItem.component =
+                    Qt.createComponent("Color_picker.qml")
         }
         var colorPicker
-        if(rootItem.component.status == Component.Ready) {
+        if(rootItem.component.status
+                == component.Ready) {
             colorPicker = rootItem.component.createObject(rootItem, {"color" : clr, "x" : rootItem.count*55, "y" : 10})
             colorPicker.colorPicked.connect(rootItem.changeTextColor)
         }
@@ -36,12 +36,11 @@ Rectangle {
 
     Button {
         id: add
-        y: 211
         text: "add"
         anchors.left: parent.left
-        anchors.leftMargin: 38
+        anchors.leftMargin: 4
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 72
+        anchors.bottomMargin: 4
 
         onClicked: {
             createColorPicker(Qt.rgba(Math.random(),

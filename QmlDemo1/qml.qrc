@@ -17,5 +17,8 @@
         <file>LoaderComponentFile.qml</file>
         <file>DynamicComponent.qml</file>
         <file>QtCreateComponent.qml</file>
+        <file>draw_rect.qml</file>
+        <file>draw_rect_gradient.qml</file>
+        <file>draw_triangle.qml</file>
     </qresource>
 </RCC>
