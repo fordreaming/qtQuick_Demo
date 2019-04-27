@@ -1,23 +1,18 @@
 import QtQuick 2.9
 import QtQuick.Window 2.2
 
-Window {
+Rectangle {
     visible: true
     width: 640
     height: 480
-    title: qsTr("Hello World")
 
-//    LoaderFocus {
-//        id: componentFile
-//        width: 640
-//        height: 480
+//    Loader{
 //        anchors.fill: parent
+//        source: "ImgZoomIn.qml"
 //    }
-//    DynamicComponent {
+        Loader{
+            anchors.fill: parent
+            source: "AnchorsFillTest.qml"
+        }
 
-//    }
-
-    QtCreateComponent {
-
-    }
 }

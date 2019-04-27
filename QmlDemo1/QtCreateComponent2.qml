@@ -30,6 +30,9 @@ Rectangle {
                 == component.Ready) {
             colorPicker = rootItem.component.createObject(rootItem, {"color" : clr, "x" : rootItem.count*55, "y" : 10})
             colorPicker.colorPicked.connect(rootItem.changeTextColor)
+            if(rootItem.count %2 == 1) {
+                colorPicker.destroy(1000)
+            }
         }
         rootItem.count++
     }
